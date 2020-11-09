@@ -16,8 +16,4 @@ INSERT INTO `product_types` (`id`, `name`) VALUES
 (5, 'combinados'),
 (6, 'tapas'),
 (7, 'bocadillos')
-<<<<<<< HEAD
 ;
-=======
-;
->>>>>>> 62b8c03e55cd2f68a836422cbaabcada3e6ef835
