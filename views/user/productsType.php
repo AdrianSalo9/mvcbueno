@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <?php include('../views/parts/head.php') ?>
+    <?php include('../views/parts/header.php') ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -14,5 +16,6 @@
         </tr>
         <?php } 
         ?>    
+        <?php include('../views/parts/footer.php') ?>
 </body>
 </html>
