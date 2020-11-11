@@ -10,8 +10,7 @@
     <?php
         foreach ($productos as $producto ) {?>
         <tr>
-        <td><?= $producto->id?> </td>
-        <td><?= $producto->name?> </td>
+        <td><?= $producto->id?> <?= $producto->name?> </td>
         </tr>
         <?php } 
         ?>    
