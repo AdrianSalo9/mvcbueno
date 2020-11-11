@@ -40,4 +40,16 @@ class User
         }
         return $db;
     }
+    public function insert()
+    {
+        $db = User::db();
+        $statement=$db->prepare('INSERT INTO users(`name`,surname,email,birthdate) VALUES(:name, :surname, :email, :birthdate)');
+        $data = (array(
+            ':name'=>$this->name,
+            ':surname'=>$this->surname,
+            ':email'=>$this->email,
+            ':birthdate'=>$this->birthdate
+        ));
+        return $statement->execute($data);
+    }
 }

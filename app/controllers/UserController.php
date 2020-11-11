@@ -10,7 +10,7 @@ class UserController
 {
     public function __construct()
     {
-        echo "en UserController<br>";
+
     }
 
     public function index()
@@ -39,5 +39,21 @@ class UserController
     {
         $id = $arguments[0];
         echo "Borrar el usuario $id";        
+    }
+    public function create()
+    {
+        include('../views/user/create.php');
+    }
+    public function store()
+    {
+        //crear objeto
+        $user = new User;
+        $user->name= $_POST['name'];
+        $user->surname= $_POST['surname'];
+        $user->email= $_POST['email'];
+        $user->birthdate= $_POST['birthdate'];
+        $user->insert();
+        //redirigir a la lista
+        header('Location: /user/index');
     }
 }

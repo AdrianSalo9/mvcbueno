@@ -12,7 +12,8 @@
 </head>
 <body>
     <h1>Lista de usuarios  </h1>
-    <table>
+    <a class="btn btn-primary float-right" href="/user/create">Nuevo</a>
+    <table class="table table-striped">
         <thead>
             <tr>
             <th>Nombre</th>
