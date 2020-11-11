@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <?php include('../views/parts/head.php') ?>
+    <?php include('../views/parts/header.php') ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../public/js/bootstrap.js"></script>
+    <script src="../public/js/jquery-3.js"></script>
+    <script src="../public/js/popper.js"></script>
     <title>MVC</title>
 </head>
 <body>
@@ -37,5 +42,6 @@
             <?php } ?>            
         </tbody>
     </table>
+    <?php include('../views/parts/footer.php') ?>
 </body>
 </html>

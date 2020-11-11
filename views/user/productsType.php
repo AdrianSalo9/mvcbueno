@@ -5,7 +5,10 @@
     <?php include('../views/parts/header.php') ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="../public/js/bootstrap.js"></script>
+    <script src="../public/js/jquery-3.js"></script>
+    <script src="../public/js/popper.js"></script>
+    <title>MVC</title>
 </head>
 <body>
     <h1>Lista de productos</h1>
