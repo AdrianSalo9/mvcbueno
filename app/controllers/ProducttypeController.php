@@ -7,13 +7,13 @@ class ProducttypeController
 {
     public function __construct()
     {
-            echo "En product type Controller <br>";
+            # code...
     }
     public function index()
     {
         $productos=ProductsType::all();
         echo "<pre>";
-        include('../views/user/productsType.php');
+        include('../../views/user/productsType.php');
     }
 }
 
